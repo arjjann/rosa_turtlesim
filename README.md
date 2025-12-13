@@ -42,10 +42,10 @@ Turtlesim Robot
 
 ### 1️⃣ Create Python / Conda Environment
 > ⚠️ Ensure your Python version matches your ROS 2 Python version
-```bash
+bash
 conda create -n rosa_env python=3.10
 conda activate rosa_env
-
+> 
 ### 2️⃣ Install ROSA
 
 pip3 install jpl-rosa
