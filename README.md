@@ -46,7 +46,7 @@ Turtlesim Robot
 conda create -n rosa_env python=3.10
 conda activate rosa_env
 
-2️⃣ Install ROSA
+### 2️⃣ Install ROSA
 
 pip3 install jpl-rosa
 
