@@ -1,4 +1,4 @@
-# 🤖 ROSA Turtlesim Simulation
+#  ROSA Turtlesim Simulation
 ### Natural Language Control of ROS 2 Robots
 
 ---
@@ -12,9 +12,15 @@ This project demonstrates how **Turtlesim** can be controlled using **natural la
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Create Python / Conda Environment & Install ROSA
-```yaml
+```yaml 
 conda create -n rosa_env python=3.10
 conda activate rosa_env
+```
+### Install the rosa
 pip3 install jpl-rosa
+
+### Clone reposotory
 git clone https://github.com/arjjann/rosa_turtlesim.git
 cd rosa_turtlesim
+
+
