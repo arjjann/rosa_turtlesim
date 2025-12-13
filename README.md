@@ -45,9 +45,10 @@ Turtlesim Robot
 bash
 conda create -n rosa_env python=3.10
 conda activate rosa_env
-> 
+>
 ### 2️⃣ Install ROSA
 
+bash
 pip3 install jpl-rosa
 
 3️⃣ Clone the Repository
