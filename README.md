@@ -1,54 +1,71 @@
-# 🤖 ROSA Turtlesim Simulation
-### Natural Language Control of ROS 2 Robots
+🛠️ Installation & Setup
 
-[![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org/)
-[![ROS 2 Jazzy](https://img.shields.io/badge/ROS2-Jazzy-green)](https://docs.ros.org/en/jazzy/)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+Follow these steps to set up the necessary environment and clone the repository.
+Prerequisites
 
----
+    A working installation of ROS 2 (Humble or Jazzy).
 
-## 📌 Overview
-**ROSA** is an AI-powered assistant for **ROS 1 and ROS 2**, developed by NASA JPL and built on the **LangChain framework**.  
-This project demonstrates how **Turtlesim** can be controlled using **natural language commands**, enabling intuitive human–robot interaction.
+    Conda or Mamba for environment management.
 
----
+Steps
 
-## ⚙️ Installation & Setup
+    Create and activate the dedicated Python environment
 
-### 1️⃣ Create Python / Conda Environment & Install Everything
-> ⚠️ Ensure your Python version matches your ROS 2 Python version
-```bash
-# Create and activate Python environment
-conda create -n rosa_env python=3.10
-conda activate rosa_env
+    Install the ROSA library
 
-# Install ROSA
-pip3 install jpl-rosa
+    Clone the project repository
 
-# Clone the repository
-git clone https://github.com/arjjann/rosa_turtlesim.git
-cd rosa_turtlesim
+    Install specific project dependencies
 
-# Configure OpenAI / Azure Keys
-echo "AZURE_OPENAI_API_KEY=your_api_key" >> .env
-echo "AZURE_OPENAI_ENDPOINT=your_endpoint" >> .env
-echo "AZURE_DEPLOYMENT_NAME=your_deployment_name" >> .env
-# ⚠️ Do NOT commit the .env file to GitHub
+🏃 Running the Program
 
-# Source ROS 2 Jazzy
-source /opt/ros/jazzy/setup.bash
+Follow these steps to launch the ROS 2 simulation and start the control script.
 
-# Activate Python environment again (if needed)
-conda activate rosa_env
+    Source your ROS 2 environment (Important! Use the command appropriate for your shell)
 
-# Run the main program
-python main.py
+    Activate the ROSA environment
 
-# Example commands to enter
-# Move forward 3 meters
-# Turn 90 degrees
-# Draw a circle of radius 2
+    Launch the Turtlesim simulation
 
-# Testing & debugging
-ros2 topic list
-ros2 topic echo /turtle1/cmd_vel
+    In a new terminal, run the ROSA control script (ensure you have sourced ROS 2 and activated rosa_env in this terminal too)
+
+    Provide commands You can now type natural language instructions, such as:
+
+        Move forward 2 units, then turn 90 degrees left.
+
+        Draw a small square.
+
+        Stop moving and reset the simulation.
+
+📸 Screenshots and GIFs
+
+Watch the ROSA agent control the Turtlesim robot using only natural language instructions!
+🛣️ Future Enhancements / Roadmap
+
+    Waypoint Navigation: Implement ability to navigate to specific coordinates.
+
+    Voice-based Control: Integrate a speech-to-text module for hands-free operation.
+
+    Multi-robot Support: Extend the framework to coordinate control of multiple Turtlesim instances.
+
+    Integration with Real Hardware: Adapt the tools layer for physical robots (e.g., TurtleBot 4).
+
+🔬 Testing & Debugging
+
+These commands are useful for verifying the ROS 2 environment and monitoring the robot's commands. Run these in a separate terminal after launching the simulation.
+List Active ROS 2 Topics
+Echo Command Velocity
+
+Use this to see the raw velocity messages being sent to the robot.
+⚙️ Technologies Used
+🔗 Sources & References
+
+    : Official documentation and source code for the ROSA framework.
+
+    : Official documentation for the ROS 2 ecosystem.
+
+🙏 Acknowledgements
+
+A special thanks to the developers of the ROSA framework for creating an intuitive and powerful tool for robotics control.
+
+Enjoy using ROSA! If you find this project useful, please consider starring the repository!
